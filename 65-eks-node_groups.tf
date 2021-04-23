@@ -6,7 +6,7 @@ resource "aws_eks_node_group" "public" {
   capacity_type = "ON_DEMAND"
   disk_size     = 10
   instance_types = [
-    "t3.small",
+    "t3.large",
   ]
   labels = {
     "env"   = "prod"
